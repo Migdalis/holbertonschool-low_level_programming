@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "holberton.h"
 
 /**
  *main - Prints Holberton
@@ -9,6 +10,6 @@
  **/
 int main(void)
 {
-	printf("Holberton\n");
+	printofword("Holberton\n");
 	return (0);
 }
