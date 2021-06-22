@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include <string.h>
 #include "holberton.h"
 
 /**
@@ -10,6 +10,13 @@
  **/
 int main(void)
 {
-	printofword("Holberton\n");
-	return (0);
+unsigned long int i;
+char word[] = "Holberton\n";
+i = 0;
+while (i < strlen(word))
+{
+_putchar(word[i]);
+i++;
+}
+return (0);
 }
