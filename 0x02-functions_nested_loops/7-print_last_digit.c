@@ -11,12 +11,12 @@
 
 int print_last_digit(int n)
 {
-unsigned long int digit;
+unsigned int digit;
 
 if (n > 0)
 digit = n % 10;
 if (n == INT_MIN)
-digit = ((unsigned int)n) %10;
+digit = ((unsigned int)n) % 10;
 else
 digit = ((-1) * n) % 10;
 
