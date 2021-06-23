@@ -15,9 +15,12 @@ unsigned int digit;
 
 if (n > 0)
 digit = n % 10;
-else
+if ((n < 0) && (n == INT_MIN))
 digit = ((unsigned int) n) % 10;
+else
+if (n < 0)
+digit = ((-1) * n) % 10;
 
-_putchar('0' + digit);
+ _putchar('0' + digit);
 return (digit);
 }
