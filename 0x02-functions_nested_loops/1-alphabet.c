@@ -1,7 +1,5 @@
 #include "holberton.h"
 
-int _putchar(char c);
-
 /**
  *main - Prints alphabet
  *Description: Function for prints alphabet
