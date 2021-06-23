@@ -2,7 +2,7 @@
 
 /**
  *print_sign - Prints the sign of a number
- *@c: The number to check
+ *@n: The number to check
  *Description: Function for prints a sign
  *Return: 1 to greater than zero, 0 to zero or -1 to less than zero
  *
