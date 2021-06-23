@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- *main - Prints alphabet
+ *print_alphabet - Prints alphabet
  *Description: Function for prints alphabet
  *Return: 0 to success
  *
