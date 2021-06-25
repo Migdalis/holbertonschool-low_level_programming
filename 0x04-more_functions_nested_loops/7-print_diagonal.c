@@ -23,6 +23,7 @@ if (j == i)
 _putchar(92);
 _putchar(10);
 }
+else
 _putchar(32);
 }
 }
