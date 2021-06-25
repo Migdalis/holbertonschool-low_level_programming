@@ -10,7 +10,7 @@ int main(void)
 int i;
 
 i = 98;
-printf("Function succes: %d", positive_or_negative(i);
-
+positive_or_negative(i);
+printf("Function succes");
 return (0);
 }
