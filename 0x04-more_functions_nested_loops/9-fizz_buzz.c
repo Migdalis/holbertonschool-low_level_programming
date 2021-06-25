@@ -21,22 +21,25 @@ mult5 = i % 5;
 
 if ((mult3 == 0) && (mult5 == 0))
 {
-printf("FizzBuzz ");
+printf("FizzBuzz");
 }
 else
 {
 if (mult3 == 0)
-printf("Fizz ");
+printf("Fizz");
 else
 {
 if (mult5 == 0)
-printf("Buzz ");
+printf("Buzz");
 else
-printf("%d ", i);
+printf("%d", i);
+}
+}
+if (i == 100)
+putchar(10);
+else
+putchar(32);
 }
 
-}
-}
-printf("\n");
 return (0);
 }
