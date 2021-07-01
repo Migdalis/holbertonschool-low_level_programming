@@ -10,16 +10,20 @@
 
 void print_rev(char *s)
 {
+int i;
+int j;
 
-if (*s != '\0')
+i = 0;
+while (*(s + i) != '\0')
 {
-print_rev(s + 1);
-_putchar(*s);
+i++;
 }
-else
-{
 
-return;
+for (j = i - 1; j >= 0; j--)
+{
+_putchar(s[j]);
 }
+
+_putchar(10);
 
 }
