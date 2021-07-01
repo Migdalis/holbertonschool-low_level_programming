@@ -20,10 +20,10 @@ while (*(str + i) != '\0')
 i++;
 }
 if (i % 2 != 0)
-n = i - 1;
+n = (i + 1) / 2;
 else
-n = i;
-for (j = n / 2; j < i; j++)
+n = i / 2;
+for (j = n; j < i; j++)
 {
 _putchar(str[j]);
 }
