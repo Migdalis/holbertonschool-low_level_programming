@@ -26,5 +26,8 @@ return (s + i);
 i++;
 }
 
+if (s[i] == '\0')
+return (s + i)
+
 return (NULL);
 }
