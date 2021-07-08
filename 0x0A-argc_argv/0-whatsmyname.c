@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "holberton.h"
 
 /**
  *main - Print my name
@@ -12,7 +11,7 @@
 
 int main(int argc, char *argv[])
 {
-if (argc >= 0)
+if (argc)
 printf("%s\n", argv[0]);
 
 return (0);
