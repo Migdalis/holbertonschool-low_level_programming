@@ -1,23 +1,25 @@
 #include "holberton.h"
 
 /**
- *_strlen_recursion - Length of a string
- *@s: String to find length
- *Description: Function that count the length of a string
- *Return: A integer to length
+ *factorial - Factorial of a number
+ *@n: Given number
+ *Description: Function that calculate the factorial of a given number
+ *Return: A integer to factorial, -1 if n is lower than 0
  *
  **/
 
-int _strlen_recursion(char *s)
+int factorial(int n)
 {
-int i;
-if (*s != '\0')
+if (n > 0)
 {
-i = _strlen_recursion(s + 1);
-return (i + 1);
+return (n * factorial(n - 1));
+}
+if (n < 0)
+{
+return (-1);
 }
 else
 {
-return (0);
+return (1);
 }
 }
