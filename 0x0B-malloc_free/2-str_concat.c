@@ -32,11 +32,13 @@ size = size1 + size2 + 1;
 concat = malloc(size *sizeof(char));
 if (concat)
 {
+if (size1 > 0)
 for (i = 0; i < size1; i++)
 {
 concat[i] = s1[i];
 }
 j = 0;
+if (size2 > 0)
 for (i = size1; i < size; i++)
 {
 concat[i] = s2[j];
