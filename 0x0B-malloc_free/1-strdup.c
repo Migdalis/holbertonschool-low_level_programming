@@ -23,7 +23,7 @@ for (i = 0; str[i] != '\0'; i++)
 }
 
 size = i + 1;
-new_array = malloc(i * sizeof(char));
+new_array = malloc(size * sizeof(char));
 
 if (new_array)
 {
