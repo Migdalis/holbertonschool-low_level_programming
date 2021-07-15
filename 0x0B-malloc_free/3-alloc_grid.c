@@ -21,22 +21,18 @@ return (NULL);
 
 array2D = malloc(height * sizeof(int));
 
-if (array2D)
-{
+if (!array2D)
+return (NULL);
 for (i = 0; i < height; i++)
 {
 array2D[i] = malloc(width * sizeof(int));
-if (array2D[i])
-{
+if (!array2D[i])
+return (NULL);
 for (j = 0; j < width; j++)
 {
 array2D[i][j] = 0;
 }
 }
-else
-return (NULL);
-}
 return (array2D);
-}
-return (NULL);
+
 }
