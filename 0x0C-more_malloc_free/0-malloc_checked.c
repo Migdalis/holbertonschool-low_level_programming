@@ -12,14 +12,11 @@
 void *malloc_checked(unsigned int b)
 {
 void *new_memory;
-if (b <= 0)
-return (NULL);
-else
-{
+
 new_memory = malloc(b * sizeof(void *));
 
 if (new_memory)
 return (new_memory);
-}
+
 exit(98);
 }
