@@ -11,10 +11,12 @@
 
 void print_dog(struct dog *d)
 {
+char age[14];
+sprintf(age, "%g", d->age);
 if (d != NULL)
 {
 printf("Name: %s\n", d->name == NULL ? "nil" : d->name);
-printf("Age: %f\n", d->age == 0.0 ? 0.0 : d->age);
+printf("Age: %s\n", d->age <= 0.0 ? "nil" : age);
 printf("Owner: %s\n", d->owner == NULL ? "nil" : d->owner);
 }
 }
