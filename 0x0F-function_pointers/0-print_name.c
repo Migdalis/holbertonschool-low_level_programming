@@ -12,6 +12,6 @@
 void print_name(char *name, void (*f)(char *))
 {
 void (*fun_point)(char *) = f;
-if (name != NULL)
+if (name != NULL && f != NULL)
 fun_point(name);
 }
