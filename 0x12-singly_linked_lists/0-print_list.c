@@ -2,14 +2,14 @@
 #include "lists.h"
 
 /**
- *print_list - Function that prints a list
- *@h: Head of a list
- *Description: Function that prints all the elements of a list_t list
- *Return: The number of nodes
- **/
+ * print_list - Function that prints a list
+ * @h: Head of a list
+ * Description: Function that prints all the elements of a list_t list
+ * Return: The number of nodes
+ */
 size_t print_list(const list_t *h)
 {
-        int count = 0;
+        size_t count = 0;
 
         while (h)
         {
