@@ -6,8 +6,6 @@
  * @str: Pointer to string
  * @len: Length of a string
  * @next: Pointer to next element
- *
- * Description: Data for a list
  */
 typedef struct list
 {
