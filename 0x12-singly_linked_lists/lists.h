@@ -2,16 +2,18 @@
 #define LISTS_H
 
 /**
- * struct list - Data for a list
- * @str: Pointer to string
- * @len: Length of a string
- * @next: Pointer to next element
+ * struct list_s - singly linked list
+ * @str: string - (malloc'ed string)
+ * @len: length of the string
+ * @next: points to the next node
+ *
+ * Description: singly linked list node structure
  */
-typedef struct list
+typedef struct list_s
 {
-        char *str;
-        int len;
-        struct list *next;        
+    char *str;
+    unsigned int len;
+    struct list_s *next;
 } list_t;
 
 int _putchar(char c);
