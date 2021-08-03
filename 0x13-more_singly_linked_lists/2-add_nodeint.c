@@ -3,10 +3,11 @@
 #include "lists.h"
 
 /**
- * listint_len - Function that returns the number of elements in a linked list
- * @h: Head of a list
- * Description: Function that returns the number of elements in a linked list
- * Return: The number of nodes
+ * add_nodeint - Function that adds a new node
+ * @head: Head of a list
+ * @n: Value of integer
+ * Description: Function that adds a new node at the beginning of a list
+ * Return: The new head
  */
 listint_t *add_nodeint(listint_t **head, const int n)
 {
