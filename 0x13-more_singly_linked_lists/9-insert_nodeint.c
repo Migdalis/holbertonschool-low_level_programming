@@ -15,6 +15,8 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 	unsigned int i;
 
 	aux = *head;
+	if (idx > 0 && aux == NULL)
+		return (NULL);
 	new = malloc(sizeof(listint_t));
 	if (!new)
 		return (NULL);
@@ -35,5 +37,5 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 		aux = aux->next;
 	}
 
-	return (NULL);	
+	return (NULL);
 }
