@@ -18,7 +18,7 @@ unsigned long int pow_btwo(unsigned long int power)
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int prev, current, i;
+	unsigned long int po, i;
 
 	if (n == 0)
 	{
@@ -35,18 +35,8 @@ void print_binary(unsigned long int n)
 	{
 		i++;
 	}
-	prev = i - 1;
-	current = n;
-	while (prev)
-	{
-		if (pow_btwo(prev) <= current)
-		{
-			_putchar('1');
-			current = current - pow_btwo(prev);
-		}
-		else
-			_putchar('0');
-		prev--;
-	}
-	_putchar('0' + current);
+	po = i - 1;
+	for (i = po; i > 0; i--)
+		_putchar('0' + ((n >> i) & 1));
+	_putchar('0' + ((n >> 0) & 1));
 }
