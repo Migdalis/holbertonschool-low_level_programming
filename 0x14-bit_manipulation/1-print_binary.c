@@ -38,5 +38,5 @@ void print_binary(unsigned long int n)
 	po = i - 1;
 	for (i = po; i > 0; i--)
 		_putchar('0' + ((n >> i) & 1));
-	_putchar('0' + ((n >> 0) & 1));
+	_putchar('0' + ((n >> i) & 1));
 }
