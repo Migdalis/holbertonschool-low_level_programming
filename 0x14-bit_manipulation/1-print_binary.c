@@ -28,9 +28,9 @@ void print_binary(unsigned long int n)
 			i++;
 		}
 		po = i - 1;
-		for (i = po; i > 0; i--)
+		for (i = po; n >> i; i--)
 			_putchar('0' + ((n >> i) & 1));
 	}
-
-	_putchar('0' + ((n >> i) & 1));
+	else
+		_putchar('0' + ((n >> i) & 1));
 }
