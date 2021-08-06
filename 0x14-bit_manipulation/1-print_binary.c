@@ -28,9 +28,12 @@ void print_binary(unsigned long int n)
 			i++;
 		}
 		po = i - 1;
-		for (i = po; i > 0; i--)
+		i = po;
+		while (n >> i)
+		{
 			_putchar('0' + ((n >> i) & 1));
-		_putchar('0' + ((n >> i) & 1));
+			i--;
+		}
 	}
 	else
 		_putchar('0' + ((n >> i) & 1));
