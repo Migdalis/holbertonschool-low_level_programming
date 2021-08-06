@@ -20,18 +20,18 @@ void print_binary(unsigned long int n)
 {
 	unsigned long int po, i;
 
-	if (n < 2)
+	if (n > 1)
 	{
+		i = 0;
+		while (pow_btwo(i) <= n)
+		{
+			i++;
+		}
+		po = i - 1;
+		for (i = po; i > 0; i--)
+			_putchar('0' + ((n >> i) & 1));
 		_putchar('0' + (n & 1));
-		return;
 	}
-	i = 0;
-	while (pow_btwo(i) <= n)
-	{
-		i++;
-	}
-	po = i - 1;
-	for (i = po; i > 0; i--)
-		_putchar('0' + ((n >> i) & 1));
+
 	_putchar('0' + (n & 1));
 }
