@@ -21,7 +21,9 @@ void print_binary(unsigned long int n)
 	unsigned long int po, i;
 
 	i = 0;
-	if (n >= 1)
+	if (n == 0)
+		_putchar('0' + ((n >> i) & 1));
+	else
 	{
 		while (pow_btwo(i) <= n)
 		{
@@ -35,6 +37,5 @@ void print_binary(unsigned long int n)
 			i--;
 		}
 	}
-	else
-		_putchar('0' + ((n >> i) & 1));
+	
 }
