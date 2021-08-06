@@ -20,7 +20,7 @@ void print_binary(unsigned long int n)
 {
 	unsigned long int po, i;
 
-	if (n == 0 || n == 1)
+	if (n < 2)
 	{
 		_putchar('0' + (n & 1));
 		return;
