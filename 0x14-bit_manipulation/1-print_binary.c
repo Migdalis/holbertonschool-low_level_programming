@@ -25,7 +25,7 @@ void print_binary(unsigned long int n)
 		_putchar('0' + ((n >> i) & 1));
 	else
 	{
-		while (pow_btwo(i) <= n)
+		while (n >> i)
 		{
 			i++;
 		}
