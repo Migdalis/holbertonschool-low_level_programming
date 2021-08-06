@@ -20,14 +20,9 @@ void print_binary(unsigned long int n)
 {
 	unsigned long int po, i;
 
-	if (n == 0)
+	if (n == 0 || n == 1)
 	{
-		_putchar('0' + (n  & 1));
-		return;
-	}
-	if (n == 1)
-	{
-		_putchar('0' + (n  & 1));
+		_putchar('0' + (n & 1));
 		return;
 	}
 	i = 0;
@@ -38,5 +33,5 @@ void print_binary(unsigned long int n)
 	po = i - 1;
 	for (i = po; i > 0; i--)
 		_putchar('0' + ((n >> i) & 1));
-	_putchar('0' + ((n >> i) & 1));
+	_putchar('0' + (n & 1));
 }
