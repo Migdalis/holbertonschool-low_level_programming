@@ -8,10 +8,12 @@
  *
  *Display a text on screen
  **/
+
 int main(void)
 {
 	unsigned long int i;
 	char word[] = "_putchar\n";
+
 	i = 0;
 	while (i < strlen(word))
 	{
