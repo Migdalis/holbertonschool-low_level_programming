@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 #include <limits.h>
 
 /**
@@ -11,16 +11,16 @@
 
 int print_last_digit(int n)
 {
-unsigned int digit;
+	unsigned int digit;
 
-if (n >= 0)
-digit = n % 10;
-if ((n < 0) && (n == INT_MIN))
-digit = ((unsigned int) n) % 10;
-else
-if (n < 0)
-digit = ((-1) * n) % 10;
+	if (n >= 0)
+		digit = n % 10;
+	if ((n < 0) && (n == INT_MIN))
+		digit = ((unsigned int) n) % 10;
+	else
+		if (n < 0)
+			digit = ((-1) * n) % 10;
 
-_putchar('0' + digit);
-return (digit);
+	_putchar('0' + digit);
+	return (digit);
 }
