@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  *print_rev - Prints a string
@@ -10,20 +10,20 @@
 
 void print_rev(char *s)
 {
-int i;
-int j;
+	int i;
+	int j;
 
-i = 0;
-while (*(s + i) != '\0')
-{
-i++;
-}
+	i = 0;
+	while (*(s + i) != '\0')
+	{
+		i++;
+	}
 
-for (j = i - 1; j >= 0; j--)
-{
-_putchar(s[j]);
-}
+	for (j = i - 1; j >= 0; j--)
+	{
+		_putchar(s[j]);
+	}
 
-_putchar(10);
+	_putchar(10);
 
 }
