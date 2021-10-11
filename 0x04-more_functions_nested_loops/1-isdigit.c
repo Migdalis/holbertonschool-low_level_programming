@@ -10,10 +10,10 @@
 
 int _isdigit(int c)
 {
-if ((c > 47) && (c < 58))
-{
-return (1);
-}
+	if ((c > 47) && (c < 58))
+	{
+		return (1);
+	}
 
-return (0);
+	return (0);
 }
