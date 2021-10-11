@@ -27,7 +27,7 @@ void print_number(int n)
 
 	if (n < 0)
 	{
-		abs = (-1) * n;
+		abs = -n;
 
 		if ((abs / 10) != 0)
 		{
