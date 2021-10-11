@@ -16,13 +16,7 @@ void print_number(int n)
 		if ((n / 10) != 0)
 		{
 			print_number(n / 10);
-			_putchar('0' + n % 10);
 		}
-		else
-		{
-			_putchar('0' + n % 10);
-		}
-		return;
 	}
 
 	if (n < 0)
@@ -33,10 +27,10 @@ void print_number(int n)
 		{
 			_putchar(45);
 			print_number(abs / 10);
-			_putchar('0' + abs % 10);
 		}
 	}
 
 	if (n == 0)
 		_putchar(48);
+	_putchar('0' + n % 10);
 }
