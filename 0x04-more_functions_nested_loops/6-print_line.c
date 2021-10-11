@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  *print_line - Prints a line
@@ -9,14 +9,14 @@
 
 void print_line(int n)
 {
-int i;
+	int i;
 
-if (n > 0)
-{
-for (i = 0; i < n; i++)
-{
-_putchar(95);
-}
-}
-_putchar(10);
+	if (n > 0)
+	{
+		for (i = 0; i < n; i++)
+		{
+			_putchar(95);
+		}
+	}
+	_putchar(10);
 }
