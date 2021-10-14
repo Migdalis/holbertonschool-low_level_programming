@@ -30,6 +30,8 @@ char *cap_string(char *s)
 	i = 0;
 	while (s[i])
 	{
+		if (i == 0 && s[i] > 96 && s[i] < 123)
+			s[i] = s[i] - 32;
 		if (is_separator(s[i]) && (s[i + 1] > 96 && s[i + 1] < 123))
 			s[i + 1] = s[i + 1] - 32;
 		i++;
