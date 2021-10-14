@@ -5,8 +5,8 @@
  *@s1: String to compare
  *@s2: String to compare
  *Description: Function that compares two strings
- *Return: An integer less than, equal to, or greater 
- *than zero if s1 is found, respectively, to be less than, 
+ *Return: An integer less than, equal to, or greater
+ *than zero if s1 is found, respectively, to be less than,
  *to match, or be greater than s2
  *
  **/

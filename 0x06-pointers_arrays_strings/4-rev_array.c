@@ -1,14 +1,10 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- *_strcmp - Compares two strings
- *@s1: String to compare
- *@s2: String to compare
- *Description: Function that compares two strings
- *Return: An integer less than, equal to, or greater 
- *than zero if s1 is found, respectively, to be less than, 
- *to match, or be greater than s2
+ *reverse_array - Reverse an array
+ *@a: Array to reverse
+ *@n: Size of array
+ *Description: Function that reverses the content of an array of integers
  *
  **/
 
@@ -25,5 +21,5 @@ void reverse_array(int *a, int n)
 		a[j] = tmp;
 		i++;
 		j--;
-	}	
+	}
 }
