@@ -1,11 +1,11 @@
 #include "main.h"
-#include <stdio.h>
+
 /**
- *reverse_array - Reverse an array
- *@a: Array to reverse
- *@n: Size of array
- *Description: Function that reverses the content of an array of integers
- *
+ *string_toupper - Lower to upper
+ *@s: String to change
+ *Description: Function that changes all lowercase letters
+ *of a string to uppercase
+ *Return: The string modified
  **/
 
 char *string_toupper(char *s)
