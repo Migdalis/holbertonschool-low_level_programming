@@ -14,7 +14,7 @@
 unsigned int _strspn(char *s, char *accept)
 {
 	int i, j;
-	unsigned int bytes = 0;
+	unsigned int bytes = 1;
 
 	if (accept == '\0')
 		return (bytes);
@@ -29,7 +29,5 @@ unsigned int _strspn(char *s, char *accept)
 			}
 		}
 	}
-	if (bytes > 0)
-		bytes++;
 	return (bytes);
 }
