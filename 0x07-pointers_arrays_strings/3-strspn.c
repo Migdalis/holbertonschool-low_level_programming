@@ -16,6 +16,8 @@ unsigned int _strspn(char *s, char *accept)
 	int i, j;
 	unsigned int bytes = 0;
 
+	if (accept == '\0')
+		return (bytes);
 	for (i = 0; accept[i] != '\0'; i++)
 	{
 		for (j = 0; s[j] != '\0'; j++)
