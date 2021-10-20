@@ -1,4 +1,4 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
  *search_root - Square root of a number
@@ -11,29 +11,23 @@
  **/
 int search_root(int raiz, int limit_sup, int limit_inf)
 {
-int temp;
+	int temp;
 
-temp = (limit_sup + limit_inf) / 2;
+	temp = (limit_sup + limit_inf) / 2;
 
-if ((temp *temp) == raiz)
-{
-return (temp);
-}
-else
-{
-if ((temp *temp) > raiz)
-{
-return (search_root(raiz, temp, limit_inf));
-}
-else
-{
-if (temp == limit_inf)
-{
-return (-1);
-}
-return (search_root(raiz, limit_sup, temp));
-}
-}
+	if ((temp *temp) == raiz)
+		return (temp);
+	else
+	{
+		if ((temp *temp) > raiz)
+			return (search_root(raiz, temp, limit_inf));
+		else
+		{
+			if (temp == limit_inf)
+				return (-1);
+			return (search_root(raiz, limit_sup, temp));
+		}
+	}
 }
 /**
  *_sqrt_recursion - Square root of a number
@@ -44,16 +38,10 @@ return (search_root(raiz, limit_sup, temp));
  **/
 int _sqrt_recursion(int n)
 {
-if ((n > 0) & (n != 1))
-{
-return (search_root(n, n, 0));
-}
-if (n < 0)
-{
-return (-1);
-}
-else
-{
-return ((n == 0) ? 0 : 1);
-}
+	if ((n > 0) & (n != 1))
+		return (search_root(n, n, 0));
+	if (n < 0)
+		return (-1);
+	else
+		return ((n == 0) ? 0 : 1);
 }
