@@ -15,12 +15,16 @@ int search_root(int raiz, int limit_sup, int limit_inf)
 
 	temp = (limit_sup + limit_inf) / 2;
 
-	if ((temp *temp) == raiz)
+	if ((temp * temp) == raiz)
+	{
 		return (temp);
+	}
 	else
 	{
-		if ((temp *temp) > raiz)
+		if ((temp * temp) > raiz)
+		{
 			return (search_root(raiz, temp, limit_inf));
+		}
 		else
 		{
 			if (temp == limit_inf)
@@ -29,6 +33,7 @@ int search_root(int raiz, int limit_sup, int limit_inf)
 		}
 	}
 }
+
 /**
  *_sqrt_recursion - Square root of a number
  *@n: Number to find square root
