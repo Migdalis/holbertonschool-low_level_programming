@@ -3,7 +3,9 @@
 /**
  *print_diagsums - Sum of the two diagonals
  *@a: Matrix to add
- *Description: Function that prints the sum of the two diagonals of a square matrix of integers
+ *@size: Size of array
+ *Description: Function that prints the sum of the two
+ *diagonals of a square matrix of integers
  *
  **/
 
