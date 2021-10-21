@@ -16,8 +16,9 @@ int _strlen_rec(char *s)
 }
 /**
  *is_pal - Test a string
- *@s: String to test
- *@len: Length of string
+ *@s: First char
+ *@c: Second char
+ *@i: Iterador
  *Description: Function that test if a string is palindrome or not
  *Return: 1 if a string is a palindrome and 0 if not
  *
