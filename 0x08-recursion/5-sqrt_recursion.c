@@ -9,9 +9,9 @@
  *Return: A integer to square root, -1 if not have a natural square
  *
  **/
-int search_root(int raiz, int limit_sup, int limit_inf)
+unsigned int search_root(unsigned int raiz, unsigned int limit_sup, unsigned int limit_inf)
 {
-	int temp;
+	unsigned long int temp;
 
 	temp = (limit_sup + limit_inf) / 2;
 
