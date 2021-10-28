@@ -1,5 +1,5 @@
 #include <stdlib.h>
-#include "holberton.h"
+#include "main.h"
 
 /**
  *malloc_checked - Allocates memory
@@ -11,12 +11,12 @@
 
 void *malloc_checked(unsigned int b)
 {
-void *new_memory;
+	void *new_memory;
 
-new_memory = malloc(b);
+	new_memory = malloc(b);
 
-if (new_memory)
-return (new_memory);
+	if (new_memory)
+		return (new_memory);
 
-exit(98);
+	exit(98);
 }
