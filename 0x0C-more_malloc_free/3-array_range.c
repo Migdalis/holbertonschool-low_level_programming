@@ -21,7 +21,7 @@ int *array_range(int min, int max)
 	new_array = malloc(size * sizeof(int));
 	if (!new_array)
 		return (NULL);
-	for (i = 0; i <= size; i++)
+	for (i = 0; i < size; i++)
 	{
 		new_array[i] = min;
 		min++;
