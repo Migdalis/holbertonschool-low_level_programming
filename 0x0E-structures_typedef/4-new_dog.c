@@ -38,6 +38,27 @@ char *_strdup(char *str)
 }
 
 /**
+ *_strlen - Length of a string
+ *@s: Pointer to string
+ *Description: Function for get length of a string
+ *Return: Integer of length
+ *
+ **/
+
+int _strlen(char *s)
+{
+	int i;
+
+	i = 0;
+	while (*(s + i) != '\0')
+	{
+		i++;
+	}
+
+	return (i);
+}
+
+/**
  *new_dog - Create a new dog
  *@name: Name to set
  *@age: Age to set
@@ -49,26 +70,22 @@ char *_strdup(char *str)
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *new;
-	char *nam, *own;
 
 	if (name == NULL || age < 0 || owner == NULL)
 		return (NULL);
 
-	nam = _strdup(name);
-	own = _strdup(owner);
-	if (nam != NULL && own != NULL)
+	new = malloc(sizeof(dog_t));
+	if (!new)
+		return (NULL);
+
+	new->name = _strdup(name);
+	new->age = age;
+	new->owner = _strdup(owner);
+	if (!new->name || !new->owner)
 	{
-		new = malloc(sizeof(dog_t));
-		if (!new)
-			return (NULL);
-		new->name = nam;
-		new->age = age;
-		new->owner = own;
-	}
-	else
-	{
-		free(nam);
-		free(own);
+		free(new->name);
+		free(new->owner);
+		free(new);
 		return (NULL);
 	}
 
