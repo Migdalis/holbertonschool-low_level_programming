@@ -12,17 +12,19 @@
 
 int sum_them_all(const unsigned int n, ...)
 {
-unsigned int i;
-int sum = 0;
-va_list arg_point_list;
-va_start(arg_point_list, n);
+	unsigned int i;
+	int sum = 0;
+	va_list arg_point_list;
 
-if (n == 0)
-return (0);
+	va_start(arg_point_list, n);
 
-for (i = 0; i < n; i++)
-sum += va_arg(arg_point_list, int);
-va_end(arg_point_list);
+	if (n == 0)
+		return (0);
 
-return (sum);
+	for (i = 0; i < n; i++)
+		sum += va_arg(arg_point_list, int);
+
+	va_end(arg_point_list);
+
+	return (sum);
 }
