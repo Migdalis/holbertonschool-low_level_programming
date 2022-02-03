@@ -144,7 +144,7 @@ char *shash_table_get(const shash_table_t *ht, const char *key)
 	{
 		if (strcmp(aux->key, key) == 0)
 			return (aux->value);
-		aux = aux->next;
+		aux = aux->snext;
 	}
 	return (NULL);
 }
