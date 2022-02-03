@@ -39,7 +39,7 @@ shash_table_t *shash_table_create(unsigned long int size)
 void add_sorted_list(shash_table_t *ht, shash_node_t *node)
 {
 	shash_node_t *aux;
-	
+
 	if (ht->shead == NULL)
 	{
 		node->sprev = NULL;
