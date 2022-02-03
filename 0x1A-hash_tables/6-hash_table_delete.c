@@ -9,9 +9,6 @@ void hash_table_delete(hash_table_t *ht)
 	hash_node_t *tmp_one, *tmp_two;
 	unsigned long int i;
 
-	if (!ht)
-		return;
-
 	for (i = 0; i < ht->size; i++)
 	{
 		if (ht->array[i] != NULL)
