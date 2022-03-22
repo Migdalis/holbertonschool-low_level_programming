@@ -2,5 +2,7 @@ CC := gcc
 
 SRC := main.c school.c
 
-all:
+all: compile
+
+compile:
 	$(CC) $(SRC) -o school
