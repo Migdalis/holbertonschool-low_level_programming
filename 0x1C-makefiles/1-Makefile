@@ -1,0 +1,8 @@
+CC := gcc
+
+SRCS := main.c school.c
+
+all: compile
+
+compile:
+	gcc $(SRCS) -o school
